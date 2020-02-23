@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="fonts/fonts.css">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,34 +16,101 @@
 <body>
 
     <header>
-        <nav class="navbar flex-row align-items-center justify-content-around">
-            <ul class="flex-row list-style-type-none">
-                <li>
-                    <a href="#" class="header-logo">ZATTIX</a>
-                </li>
-                <li><a href="#" class="header-link active"><i class="fas fa-home"></i>
+        <nav class="header-nav-container align-items-center">
+            <a href="#" class="header-logo">ZATTIX</a>
+
+            <ul class="header-navbar align-items-center list-style-type-none">
+                <li><a href="#" class="header-navlink active"><i class="fas fa-home"></i>
                         Home</a></li>
-                <li><a href="#" class="header-link"><i class="fas fa-list-alt"></i> Collections</a></li>
-                <li><a href="#" class="header-link"><i class="fas fa-shopping-cart"></i> Purchase List</a></li>
-                <li><a href="#" class="header-link btn">Post and Add</a></li>
+                <li><a href="#" class="header-navlink"><i class="fas fa-list-alt"></i> Collections</a></li>
+                <li><a href="#" class="header-navlink"><i class="fas fa-shopping-cart"></i> Purchase List</a></li>
+                <li><a href="#" class="header-navlink btn">Post an Ad</a></li>
             </ul>
-            <div class="flex-row align-items-center">
+
+            <div class="user-box align-items-center">
                 <a href="#" class="user-messages"><i class="fas fa-envelope"></i></a>
-                <div class="user-name">John Doe</div>
+                <a href="#" class="user-name">John Doe <i class="fas fa-chevron-down"></i></a>
                 <img src="https://www.airnetwifi.es/wp-content/uploads/2016/08/13.jpg" alt="user photo"
                     class="user-photo">
+            </div>
 
+            <div class="menu-wrapper">
+                <a href="#"><i class="fas fa-bars"></i></a>
             </div>
         </nav>
     </header>
 
     <main></main>
+
     <footer>
+        <div class="footer-container">
+            <section class="footer-business-description">
+                <h2>ZATTIX</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa mollitia. Laboriosam, nemo
+                    aut!
+                    Necessitatibus minus id maiores nesciunt cum, ad adipisci repudiandae quaerat ratione ipsum sed
+                    obcaecati a? Hic?</p>
+            </section>
 
+            <section class="footer-categories-box">
+                <h3 class="t1-palered border-palered">Categories</h3>
+                <ul class="footer-navbar two-column-list list-style-type-none">
+                    <li><a href="#" class="footer-navlink">Real Estate 1</a></li>
+                    <li><a href="#" class="footer-navlink">Automotives 1</a></li>
+                    <li><a href="#" class="footer-navlink">Electronics 1</a></li>
+                    <li><a href="#" class="footer-navlink">Clothing 1</a></li>
+                    <li><a href="#" class="footer-navlink">Fashion 1</a></li>
+                    <li><a href="#" class="footer-navlink">Kids 1</a></li>
+                    <li><a href="#" class="footer-navlink">Food and Drink 1</a></li>
+                    <li><a href="#" class="footer-navlink">Real Estate 2</a></li>
+                    <li><a href="#" class="footer-navlink">Automotives 2</a></li>
+                    <li><a href="#" class="footer-navlink">Electronics 2</a></li>
+                    <li><a href="#" class="footer-navlink">Clothing 2</a></li>
+                    <li><a href="#" class="footer-navlink">Fashion 2</a></li>
+                    <li><a href="#" class="footer-navlink">Kids 2</a></li>
+                    <li><a href="#" class="footer-navlink">Food and Drink 2</a></li>
+                </ul>
+            </section>
 
+            <section class="footer-navigation-box">
+                <h3 class="t1-palered border-palered">Navigation</h3>
+                <ul class="footer-navbar list-style-type-none">
+                    <li><a href="#" class="footer-navlink">Home</a></li>
+                    <li><a href="#" class="footer-navlink">Sign In</a></li>
+                    <li><a href="#" class="footer-navlink">Sign Up</a></li>
+                    <li><a href="#" class="footer-navlink">Terms &amp; Conditions </a></li>
+                    <li><a href="#" class="footer-navlink">FAQ</a></li>
+                    <li><a href="#" class="footer-navlink">Help</a></li>
+                </ul>
+            </section>
+
+            <form id="formConfigPreferences" class="footer-config-box">
+                <div class="text-footer">
+                    <label for="txtConfigCountry" class="t1-palered">COUNTRY</label>
+                    <input type="text" id="txtConfigCountry">
+                </div>
+                <div class="text-footer">
+                    <label for="txtConfigLanguage" class="t1-palered">LANGUAGE</label>
+                    <input type="text" id="txtConfigLanguage">
+                </div>
+                <div class="text-footer">
+                    <label for="txtConfigCurrency" class="t1-palered">CURRENCY</label>
+                    <input type="text" id="txtConfigCurrency">
+                </div>
+            </form>
+        </div>
+
+        <section class="footer-copyright-box align-items-center">
+            <h6>Copyright &copy; 2015 Zattix.com. All Rights Reserved. Designed by Mohammed Awad. Coded by Sergio
+                Zambrano.</h6>
+            <div class="social-networks">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a>
+            </div>
+        </section>
     </footer>
-
-
 </body>
 
 </html>
