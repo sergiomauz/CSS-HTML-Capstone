@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Zattix Shop</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="header-nav-container">
+            <div class="flex-row">
+                <a href="#" class="header-logo"><i class="fab fa-cloudsmith"></i>&nbsp;&nbsp;<span>ZATTIX</span></a>
+
+                <ul class="header-navbar list-style-type-none">
+                    <li><a href="#" class="header-navlink active"><i class="fas fa-home"></i>
+                            Home</a></li>
+                    <li><a href="#" class="header-navlink"><i class="fas fa-list-alt"></i> Collections</a></li>
+                    <li><a href="#" class="header-navlink"><i class="fas fa-shopping-cart"></i> Purchase List</a></li>
+                    <li><a href="#" class="header-navlink btn">Post an Ad</a></li>
+                </ul>
+            </div>
+
+            <div class="user-box">
+                <a href="#" class="user-messages"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="user-name">John Doe <i class="fas fa-chevron-down"></i></a>
+                <img src="https://www.airnetwifi.es/wp-content/uploads/2016/08/13.jpg" alt="user photo"
+                    class="user-photo">
+            </div>
+
+            <div class="menu-wrapper">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form id="formSearch" class="search-banner p-1rem align-items-sm-center">
+            <h1 class="banner-title">ZATTIX</h1>
+            <p class="banner-description mb-1rem">Search around 124,000 items are waiting to be sold!</p>
+            <div class="search-container">
+                <select id="dropSearchCategory" class="input-search">
+                    <option value="0">All categories</option>
+                    <option value="1">Category 1</option>
+                    <option value="2">Category 2</option>
+                    <option value="3">Category 3</option>
+                    <option value="4">Category 4</option>
+                </select>
+                <input type="text" class="input-search" placeholder="What are you looking for?">
+                <input type="text" class="input-search" placeholder="Location">
+                <button class="button-search">
+                    <span class="btn-icon"><i class="fas fa-search"></i></span>&nbsp;<span
+                        class="btn-text">Search</span>
+                </button>
+            </div>
+        </form>
+
+        <section class="results-container">
+
+            <aside class="results-filters pb-3rem pl-3rem pr-3rem pt-1rem p-sm-1rem">
+                <div class="filter-box mb-1rem">
+                    <ul class="flex-row flex-sm-column list-style-type-none">
+                        <li class="flex-row align-items-center mr-2rem">
+                            <input class="search-check-filter" type="checkbox" id="chkNew">
+                            <label class="search-label-filter" for="chkRent">New</label>
+                        </li>
+                        <li class="flex-row align-items-center">
+                            <input class="search-check-filter" type="checkbox" id="chkUsed">
+                            <label class="search-label-filter" for="chkOwnership">Used</label>
+                        </li>
+                    </ul>
+                </div>
+                <section class="filter-box mb-1rem">
+                    <h4>Filter 1</h4>
+                    <ul class="flex-column list-style-type-none">
+                        <li class="flex-row align-items-center">
+                            <input class="search-check-filter" type="checkbox" id="chkF1O1">
+                            <label class="search-label-filter" for="chkF1O1">F1 - Option One</label>
+                        </li>
+                        <li class="flex-row align-items-center">
+                            <input class="search-check-filter" type="checkbox" id="chkF1O2">
+                            <label class="search-label-filter" for="chkF1O2">F1 - Option Two</label>
+                        </li>
+                        <li class="flex-row align-items-center">
+                            <input class="search-check-filter" type="checkbox" id="chkF1O3">
+                            <label class="search-label-filter" for="chkF1O3">F1 - Option Three</label>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="filter-box mb-1rem">
+                    <h4>Filter 2</h4>
+                    <ul class="flex-column list-style-type-none">
+                        <li class="flex-row align-items-center">
+                            <input class="search-check-filter" type="checkbox" id="chkF2O1">
+                            <label class="search-label-filter" for="chkF2O1">F2 - Option One</label>
+                        </li>
+                        <li class="flex-row align-items-center">
+                            <input class="search-check-filter" type="checkbox" id="chkF2O2">
+                            <label class="search-label-filter" for="chkF2O2">F2 - Option Two</label>
+                        </li>
+                        <li class="flex-row align-items-center">
+                            <input class="search-check-filter" type="checkbox" id="chkF2O3">
+                            <label class="search-label-filter" for="chkF2O3">F2 - Option Three</label>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="filter-box">
+                    <h4>Filter 3</h4>
+                    <ul class="flex-column list-style-type-none">
+                        <li class="flex-row align-items-center">
+                            <input class="search-check-filter" type="checkbox" id="chkF3O1">
+                            <label class="search-label-filter" for="chkF3O1">F3 - Option One</label>
+                        </li>
+                        <li class="flex-row align-items-center">
+                            <input class="search-check-filter" type="checkbox" id="chkF3O2">
+                            <label class="search-label-filter" for="chkF3O2">F3 - Option Two</label>
+                        </li>
+                        <li class="flex-row align-items-center">
+                            <input class="search-check-filter" type="checkbox" id="chkF3O3">
+                            <label class="search-label-filter" for="chkF3O3">F3 - Option Three</label>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+            <div class="results-list">
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <section class="footer-business-description">
+                <h2>ZATTIX</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa mollitia. Laboriosam, nemo
+                    aut!
+                    Necessitatibus minus id maiores nesciunt cum, ad adipisci repudiandae quaerat ratione ipsum sed
+                    obcaecati a? Hic?</p>
+            </section>
+
+            <section class="footer-categories-box">
+                <h3 class="t1-palered border-palered">Categories</h3>
+                <ul class="footer-navbar two-column-list list-style-type-none">
+                    <li><a href="#" class="footer-navlink">Real Estate 1</a></li>
+                    <li><a href="#" class="footer-navlink">Automotives 1</a></li>
+                    <li><a href="#" class="footer-navlink">Electronics 1</a></li>
+                    <li><a href="#" class="footer-navlink">Clothing 1</a></li>
+                    <li><a href="#" class="footer-navlink">Fashion 1</a></li>
+                    <li><a href="#" class="footer-navlink">Kids 1</a></li>
+                    <li><a href="#" class="footer-navlink">Food and Drink 1</a></li>
+                    <li><a href="#" class="footer-navlink">Real Estate 2</a></li>
+                    <li><a href="#" class="footer-navlink">Automotives 2</a></li>
+                    <li><a href="#" class="footer-navlink">Electronics 2</a></li>
+                    <li><a href="#" class="footer-navlink">Clothing 2</a></li>
+                    <li><a href="#" class="footer-navlink">Fashion 2</a></li>
+                    <li><a href="#" class="footer-navlink">Kids 2</a></li>
+                    <li><a href="#" class="footer-navlink">Food and Drink 2</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-navigation-box">
+                <h3 class="t1-palered border-palered">Navigation</h3>
+                <ul class="footer-navbar list-style-type-none">
+                    <li><a href="#" class="footer-navlink">Home</a></li>
+                    <li><a href="#" class="footer-navlink">Sign In</a></li>
+                    <li><a href="#" class="footer-navlink">Sign Up</a></li>
+                    <li><a href="#" class="footer-navlink">Terms &amp; Conditions </a></li>
+                    <li><a href="#" class="footer-navlink">FAQ</a></li>
+                    <li><a href="#" class="footer-navlink">Help</a></li>
+                </ul>
+            </section>
+
+            <form id="formConfigPreferences" class="footer-config-box">
+                <div class="text-footer">
+                    <label for="txtConfigCountry" class="t1-palered">COUNTRY</label>
+                    <select id="txtConfigCountry">
+                        <option>U.S.A.</option>
+                    </select>
+                </div>
+                <div class="text-footer">
+                    <label for="txtConfigLanguage" class="t1-palered">LANGUAGE</label>
+                    <select id="txtConfigLanguage">
+                        <option>English</option>
+                    </select>
+                </div>
+                <div class="text-footer">
+                    <label for="txtConfigCurrency" class="t1-palered">CURRENCY</label>
+                    <select id="txtConfigCurrency">
+                        <option>American Dollar</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <section class="footer-copyright-box">
+            <h6>Copyright &copy; 2015 Zattix.com. All Rights Reserved. Designed by Mohammed Awad. Coded by Sergio
+                Zambrano.</h6>
+            <div class="social-networks">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
