@@ -58,6 +58,10 @@ p {
   border-bottom: 0.07rem solid #d35266;
 }
 
+.border-gray {
+  border-bottom: 0.07rem solid #ccc;
+}
+
 .t1-palered {
   color: #d35266;
   font-family: "Helvetica-Neue-Medium", sans-serif;
@@ -108,6 +112,14 @@ p {
   justify-content: center;
 }
 
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+
 .user-messages {
   color: #888;
 }
@@ -136,6 +148,10 @@ p {
   padding-bottom: 3rem;
 }
 
+.pb-1rem {
+  padding-bottom: 1rem;
+}
+
 .pl-3rem {
   padding-left: 3rem;
 }
@@ -152,8 +168,39 @@ p {
   padding: 1rem;
 }
 
+.m-1rem {
+  margin: 1rem;
+}
+
 .fs-3rem {
   font-size: 3rem;
+}
+
+.carousel-button {
+  position: relative;
+  bottom: 165px;
+}
+
+.hot-category-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hot-product-container {
+  height: 335px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.hot-product-box {
+  padding: 1rem;
+  margin: 1rem;
+  max-height: 350px;;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .results-message {
@@ -178,9 +225,15 @@ p {
   border-bottom: 1px solid #ccc;
 }
 
-.product-image {
+.list-product-image {
   height: 150px;
   width: 250px;
+  box-sizing: content-box;
+}
+
+.hot-product-image {
+  height: 175px;
+  width: 200px;
 }
 
 .d-product-name {
@@ -195,12 +248,14 @@ p {
   margin-bottom: 0.5rem;
   line-height: 1.5;
   text-align: justify;
+  font-size: 0.85rem;
 }
 
 .d-product-status {
   color: #d35266;
   margin-bottom: 0.75rem;
   line-height: 1;
+  font-size: 0.85rem;
 }
 
 .btn-move-image {
@@ -208,6 +263,20 @@ p {
   position: relative;
   bottom: 0;
   margin-top: -30px;
+}
+
+.btn-hot-product-move-left,
+.btn-hot-product-move-right {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.btn-hot-product-move-left > button,
+.btn-hot-product-move-right > button {
+  background-color: transparent;
+  border: none;
 }
 
 .btn-move-image > i {
@@ -533,6 +602,10 @@ p {
 @media (max-width: 768px) {
   .p-sm-1rem {
     padding: 1rem;
+  }
+
+  .flex-sm-wrap {
+    flex-wrap: wrap;
   }
 
   .result-box {
