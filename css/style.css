@@ -174,7 +174,6 @@ p {
   padding: 1rem;
 }
 
-
 .m-1rem {
   margin: 1rem;
 }
@@ -378,7 +377,7 @@ p {
   background-color: #383838;
   display: flex;
   flex-direction: row;
-  height: 3rem;  
+  height: 3rem;
   justify-content: space-around;
   align-items: center;
 }
@@ -546,7 +545,7 @@ p {
   padding: 1rem;
   border-top: 1px solid #888;
   font-size: 1rem;
-  line-height: 1.5;  
+  line-height: 1.5;
 }
 
 .footer-copyright-box > h6 {
@@ -598,7 +597,7 @@ p {
 
 .search-banner {
   background-color: #d35266;
-  color: #fff;  
+  color: #fff;
   display: flex;
   flex-direction: column;
 }
