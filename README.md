@@ -34,5 +34,5 @@ Contributions, issues and feature requests are welcome!. For issues, feel free t
 
 ## Credits
 
-All credits for the designer: [Mohammed Awad](https://www.behance.net/M_Awad)
-The design and instructions for the project [here](https://www.behance.net/gallery/24796463/ZATTIX)
+All credits for the designer: [Mohammed Awad](https://www.behance.net/M_Awad). 
+The design and instructions for the project are [here](https://www.behance.net/gallery/24796463/ZATTIX)

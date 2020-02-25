@@ -1,24 +1,17 @@
 @import "fonts.css";
 
 html {
-  font-size: 16px;
   font-family: "Gotham-Rounded-Light", sans-serif;
   background-color: #f5f5f5;
 }
 
 body {
+  min-width: 400px;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 0;
-  min-width: 400px;
-}
-
-footer {
-  grid-row: 3;
-  bottom: 0;
-  background-color: #fff;
 }
 
 header {
@@ -27,6 +20,10 @@ header {
 
 main {
   grid-row: 2;
+}
+
+footer {
+  grid-row: 3;
 }
 
 h1,
@@ -46,6 +43,27 @@ p {
   padding: 0;
 }
 
+.font-gotham-rounded-light {
+  font-family: "Gotham-Rounded-Light", sans-serif;
+}
+
+.font-gotham-bold {
+  font-family: "Gotham-Bold", sans-serif;
+}
+
+.font-helvetica-neue-light {
+  font-family: "Helvetica-Neue-Light", sans-serif;
+}
+
+.font-helvetica-neue-medium {
+  font-family: "Helvetica-Neue-Medium", sans-serif;
+}
+
+.font-helvetica-neue-bold {
+  font-family: "Helvetica-Neue-Bold", sans-serif;
+}
+
+.button-search > .btn-icon,
 .menu-wrapper {
   display: none;
 }
@@ -76,6 +94,11 @@ p {
   flex-direction: row;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -85,11 +108,6 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
 }
 
 .list-style-type-none {
@@ -118,10 +136,6 @@ p {
 
 .justify-content-flex-start {
   justify-content: flex-start;
-}
-
-.user-messages {
-  color: #888;
 }
 
 .align-items-center {
@@ -164,12 +178,6 @@ p {
   padding-top: 1rem;
 }
 
-.hot-product-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 1rem;
-}
-
 .p-1rem {
   padding: 1rem;
 }
@@ -180,6 +188,16 @@ p {
 
 .fs-3rem {
   font-size: 3rem;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.hot-product-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
 }
 
 .carousel-button {
@@ -216,14 +234,6 @@ p {
   padding: 1rem;
   color: #888;
   border-top: 1px solid #ccc;
-}
-
-.font-gotham-rounded-light {
-  font-family: "Gotham-Rounded-Light", sans-serif;
-}
-
-.font-gotham-bold {
-  font-family: "Gotham-Bold", sans-serif;
 }
 
 .result-box {
@@ -446,6 +456,7 @@ p {
 .btn-gray {
   background-color: #383838;
   color: #fff;
+  border: 1px solid #ccc;
 }
 
 .user-photo {
@@ -464,10 +475,6 @@ p {
   padding: 0 0.5rem;
 }
 
-.background-white {
-  background-color: #fff;
-}
-
 .banner-title {
   color: #fff;
   display: block;
@@ -484,8 +491,7 @@ p {
   margin: 0 0.025rem;
   height: 2.5rem;
   box-sizing: border-box;
-  padding: 0;
-  text-align: center;
+  padding: 0 0.25rem;
   width: 12rem;
 }
 
@@ -614,10 +620,6 @@ p {
   text-decoration: none;
 }
 
-.button-search > .btn-icon {
-  display: none;
-}
-
 .button-search > .btn-text {
   display: block;
 }
@@ -637,14 +639,6 @@ p {
 
   .hot-ad-container {
     padding: 0;
-  }
-
-  .product-md-box {
-    display: none;
-  }
-
-  .product-lg-box {
-    display: none;
   }
 
   .flex-sm-wrap {
@@ -703,6 +697,8 @@ p {
     columns: 1;
   }
 
+  .product-md-box,
+  .product-lg-box,
   .banner-title,
   .banner-description,
   .user-box,
